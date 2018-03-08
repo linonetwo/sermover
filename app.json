@@ -1,22 +1,5 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0",
-    "ios": {
-      "bundleIdentifier": "ren.onetwo.sermover",
-      "publishBundlePath": "ios/sermover/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/sermover/Supporting/shell-app-manifest.json"
-    },
-    "android": {
-      "package": "ren.onetwo.sermover"
-    },
-    "name": "sermover",
-    "slug": "sermover",
-    "version": "0.1.0",
-    "isDetached": true,
-    "detach": {
-      "scheme": "exp7a77e5b4283e49579bede49f636a4e68",
-      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.3.3-sdk25.0.0-e7a4361a-631d-4caf-9692-1880d71c394a.tar.gz",
-      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.3.1-sdk25.0.0-25c56634-26d0-429e-a818-b1d9fdf0394a.tar.gz"
-    }
+    "sdkVersion": "25.0.0"
   }
 }
