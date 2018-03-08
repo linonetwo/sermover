@@ -8,6 +8,9 @@ import java.util.List;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
+import com.tradle.react.UdpSocketsModule;
+import com.peel.react.TcpSocketsModule;
+import com.peel.react.rnos.RNOSModule;
 import com.bitgo.randombytes.RandomBytesPackage;
 
 public class MainApplication extends ExpoApplication {
@@ -25,6 +28,9 @@ public class MainApplication extends ExpoApplication {
 
         // Needed for `react-native link`
         // new MainReactPackage(),
+            new UdpSocketsModule(),
+            new TcpSocketsModule(),
+            new RNOSModule(),
             new RandomBytesPackage()
     );
   }

@@ -20,6 +20,9 @@
 		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
 		EBB8117C1BFA0514F79CAF74 /* libPods-sermover.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-sermover.a */; };
 		4899F9D38C2E4869A4177845 /* libRNRandomBytes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F14B4D14E344133BB43100E /* libRNRandomBytes.a */; };
+		C1FC4AB33AE1423B85B0BEA8 /* libRNOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4BCE6468C9420DBD1BE4B5 /* libRNOS.a */; };
+		9C6DF0CEF0084E579DF57CDD /* libTcpSockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2DB639B784EE6B3D57B36 /* libTcpSockets.a */; };
+		17FB7DBC983B41318ECE46F4 /* libUdpSockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4EF8936E1A44FCBE7AFEAE /* libUdpSockets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		C4A88D15726AD99E8A257BC7 /* libPods-sermover.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sermover.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5D530D6DA7491CB80D3C6C /* RNRandomBytes.xcodeproj */ = {isa = PBXFileReference; name = "RNRandomBytes.xcodeproj"; path = "../node_modules/react-native-randombytes/RNRandomBytes.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4F14B4D14E344133BB43100E /* libRNRandomBytes.a */ = {isa = PBXFileReference; name = "libRNRandomBytes.a"; path = "libRNRandomBytes.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		EFCCE140ACCC48058DE9205F /* RNOS.xcodeproj */ = {isa = PBXFileReference; name = "RNOS.xcodeproj"; path = "../node_modules/react-native-os/ios/RNOS.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		EE4BCE6468C9420DBD1BE4B5 /* libRNOS.a */ = {isa = PBXFileReference; name = "libRNOS.a"; path = "libRNOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4CF250E75FF94CCEAEC8B8D9 /* TcpSockets.xcodeproj */ = {isa = PBXFileReference; name = "TcpSockets.xcodeproj"; path = "../node_modules/react-native-tcp/ios/TcpSockets.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		C1E2DB639B784EE6B3D57B36 /* libTcpSockets.a */ = {isa = PBXFileReference; name = "libTcpSockets.a"; path = "libTcpSockets.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		83435E52B38F4D6DB712CA53 /* UdpSockets.xcodeproj */ = {isa = PBXFileReference; name = "UdpSockets.xcodeproj"; path = "../node_modules/react-native-udp/ios/UdpSockets.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		3E4EF8936E1A44FCBE7AFEAE /* libUdpSockets.a */ = {isa = PBXFileReference; name = "libUdpSockets.a"; path = "libUdpSockets.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,9 @@
 			files = (
 				EBB8117C1BFA0514F79CAF74 /* libPods-sermover.a in Frameworks */,
 				4899F9D38C2E4869A4177845 /* libRNRandomBytes.a in Frameworks */,
+				C1FC4AB33AE1423B85B0BEA8 /* libRNOS.a in Frameworks */,
+				9C6DF0CEF0084E579DF57CDD /* libTcpSockets.a in Frameworks */,
+				17FB7DBC983B41318ECE46F4 /* libUdpSockets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +139,9 @@
 			isa = "PBXGroup";
 			children = (
 				DC5D530D6DA7491CB80D3C6C /* RNRandomBytes.xcodeproj */,
+				EFCCE140ACCC48058DE9205F /* RNOS.xcodeproj */,
+				4CF250E75FF94CCEAEC8B8D9 /* TcpSockets.xcodeproj */,
+				83435E52B38F4D6DB712CA53 /* UdpSockets.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -401,6 +416,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -418,6 +436,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
