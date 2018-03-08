@@ -1,27 +1,10 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# expo
-.expo/
-
-# dependencies
-/node_modules
-
-# misc
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OSX
+#
+.DS_Store
 
 # Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
+#
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -39,152 +22,32 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-# Gradle
-/build/
-/RNTester/android/app/build/
-/RNTester/android/app/gradle/
-/RNTester/android/app/gradlew
-/RNTester/android/app/gradlew.bat
-/ReactAndroid/build/
-
-# Buck
-.buckd
-buck-out
-/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
-/ReactAndroid/src/main/jni/prebuilt/lib/x86/
-/ReactAndroid/src/main/gen
-
-# Watchman
-.watchmanconfig
-
-# Android
+# Android/IntelliJ
+#
+build/
 .idea
 .gradle
 local.properties
 *.iml
-/android/
 
-# Node
-node_modules
-*.log
-.nvm
-/bots/node_modules/
-
-# TODO: Check in yarn.lock in open source. Right now we need to keep it out
-# from the GitHub repo as importing it might conflict with internal workspaces
-*/**/yarn.lock
-
-# OS X
-.DS_Store
-
-# Test generated files
-/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
-*.js.meta
-
-/coverage
-/third-party
-
-# Xcode
-.DS_Store
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.moved-aside
-DerivedData
-*.hmap
-*.xccheckout
-*.xcscmblueprint
-
-# Android Studio
-**/.idea/libraries
-**/.idea/workspace.xml
-**/.idea/gradle.xml
-**/.idea/misc.xml
-**/.idea/modules.xml
-**/.idea/vcs.xml
-*.iml
-.gradle
-/android/app/build
-/android/build
-/android/captures
-/android/local.properties
-/android/tools/build
-/android/ReactAndroid/build
-/android/app/libs/ReactAndroid-temp
-/android/versioned-react-native/build
-/android/versioned-react-native/local.properties
-/android/versioned-react-native/ReactAndroid
-ReactAndroid-temp.aar
-*.apk
-
-# Tools
-jarjar-rules.txt
-
-# Node
-node_modules
+# node.js
+#
+node_modules/
 npm-debug.log
+yarn-error.log
 
-# Hyperinstall
-.hyperinstall-state.json
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
 
-# Dynamic Macros
-/ios/Exponent/Supporting/Generated/EXDynamicMacros.h
-/android/app/src/main/java/host/exp/exponent/generated/ExponentBuildConstants.java
-/android/app/src/androidTest/java/host/exp/exponent/generated/TestBuildConstants.java
-.kernel-ngrok-url
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
 
-# Python
-*.pyc
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Floobits
-.floo
-.flooignore
-
-# Vim temporary files
-.*.swp
-.*.swo
-.*.swn
-.*.swm
-
-# Codemod
-.codemod.bookmark
-
-# Fastlane
-/*.cer
-/fastlane/report.xml
-/fastlane/Preview.html
-/Deployment
-/Preview.html
-
-# Emacs
-*~
-
-# CI
-android/logcat.txt
-
-# Shell apps
-android-shell-app
-
-# Template files
-android/app/src/main/AndroidManifest.xml
-android/app/google-services.json
-android/app/src/main/java/host/exp/exponent/generated/ExponentKeys.java
-android/app/fabric.properties
-ios/Exponent/Supporting/Generated/EXKeys.h
-ios/Podfile
-ios/RCTTest.podspec
-
-# Open source
-ios/Podfile.lock
-ios/Pods
-.expo
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots

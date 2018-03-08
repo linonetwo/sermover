@@ -3,22 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "25.0.0",
-    "react-native-scripts": "1.11.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-react-native": "^18.0.0",
     "react-test-renderer": "16.2.0",
     "rn-nodeify": "tradle/rn-nodeify"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "postinstall": "./node_modules/.bin/rn-nodeify --hack --install",
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native"
   },
   "dependencies": {
     "assert": "^1.4.1",
@@ -31,7 +29,6 @@
     "dns.js": "^1.0.1",
     "domain-browser": "^1.1.1",
     "events": "^1.0.0",
-    "expo": "^25.0.0",
     "https-browserify": "~0.0.0",
     "inherits": "^2.0.3",
     "ipfs": "^0.28.0",
@@ -42,10 +39,10 @@
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-browser-polyfill": "^0.1.2",
-    "react-native-crypto": "^2.1.0",
+    "react-native-crypto": "^2.1.2",
     "react-native-http": "tradle/react-native-http#834492d",
     "react-native-level-fs": "^3.0.0",
-    "react-native-os": "^1.0.1",
+    "react-native-os": "^1.1.0",
     "react-native-randombytes": "^3.0.0",
     "react-native-tcp": "^3.2.1",
     "react-native-udp": "^2.1.0",

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import styled from 'styled-components';
-import './polyfill';
-import './lib/ipfs';
 // import IPFS from 'ipfs';
 
 const Container = styled.View`
