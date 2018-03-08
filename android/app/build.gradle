@@ -100,9 +100,6 @@ preBuild.dependsOn exponentPrebuildStep
 
 
 dependencies {
-    compile project(':react-native-udp')
-    compile project(':react-native-tcp')
-    compile project(':react-native-os')
     compile project(':react-native-randombytes')
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
